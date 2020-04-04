@@ -3,11 +3,11 @@ import { render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import ComponenteSimplesComProp from './ComponenteSimplesComProp';
 
-test('It should render with the correct name', async () => {
+test('Deve renderizar com o nome correto', async () => {
   const { getByText } = render(<ComponenteSimplesComProp nome="Mateus" />);
   expect(getByText("Olá Mateus")).toBeInTheDocument();
 });
 
-test('It shouldn\'t render if no props are passed', async () => {
+test('Deve lançar excessão quando o componente não receber props', async () => {
   expect(() => ComponenteSimplesComProp()).toThrow();
 });
