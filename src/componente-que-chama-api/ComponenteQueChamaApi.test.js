@@ -27,4 +27,4 @@ test('Deve renderizar corretamente o componente', async () => {
   await waitForElement(() => getByText('TEST_TEXT'));
   expect(PostService.getPostById).toHaveBeenCalled();
   expect(PostService.getPostById).toHaveBeenCalledWith(1);
-})
+});
