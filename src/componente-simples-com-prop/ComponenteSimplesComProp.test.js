@@ -8,6 +8,6 @@ test('Deve renderizar com o nome correto', async () => {
   expect(getByText("Olá Mateus")).toBeInTheDocument();
 });
 
-test('Deve lançar excessão quando o componente não receber props', async () => {
+test('Deve lançar exceção quando o componente não receber props', async () => {
   expect(() => ComponenteSimplesComProp()).toThrow();
 });
